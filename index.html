@@ -1,100 +1,359 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Mivi AI Header</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"  />
-  <style>
-    body {
-      margin: 0;
-      background-color: #000;
-      color: white;
-      font-family: 'Segoe UI', sans-serif;
-    }
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Mivi</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
 
-    .navbar {
-      background-color: #000 !important;
-    }
-    .navbar-nav{
-        gap: 60px !important; 
-    }
-    .navbar-nav .nav-link {
-      color: white !important;
-      margin-right: 20px;
-      font-weight: 500;
-    }
+    <link rel="stylesheet" href="./css/style.css" />
+    <style></style>
+  </head>
+  <body>
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg bg-white shadow-sm">
+      <div class="container">
+        <a class="navbar-brand fw-bold fs-3 text-dark" href="#">
+          <img src="./images/logo.avif" height="40" alt="" />
+        </a>
+        <button
+          class="navbar-toggler border-0"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
 
-    .navbar-brand {
-      color: #00ff00 !important;
-      font-weight: bold;
-      font-size: 1.5rem;
-    }
+        <div class="collapse navbar-collapse ms-5" id="navbarNav">
+          <ul class="navbar-nav mx-auto gap-4">
+            <li class="nav-item">
+              <a class="nav-link text-dark" href="#">Earbuds</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-dark" href="#">Soundbars</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-dark" href="#">Earphones</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-dark" href="#">Speakers</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-dark" href="#">Support</a>
+            </li>
+          </ul>
+          <ul class="navbar-nav gap-3">
+            <li class="nav-item">
+              <a class="nav-link text-dark" href="#"
+                ><i class="fas fa-search fa-lg"></i
+              ></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-dark" href="#"
+                ><i class="fas fa-bag-shopping fa-lg"></i
+              ></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-dark" href="#"
+                ><i class="fas fa-user fa-lg"></i
+              ></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
 
-    .header-section {
-      text-align: center;
-      padding: 100px 20px;
-    }
-
-    .header-title {
-      font-size: 3rem;
-      color: #00ff00;
-      font-weight: bold;
-    }
-
-    .header-subtitle {
-      font-size: 1.5rem;
-      color: #ccc;
-    }
-
-    .btn-know-more {
-      margin-top: 30px;
-      border: 2px solid white;
-      color: white;
-      padding: 10px 30px;
-      border-radius: 30px;
-      background: transparent;
-      transition: background 0.3s;
-    }
-
-    .btn-know-more:hover {
-      background-color: #00ff00;
-      color: #000;
-    }
-  </style>
-</head>
-<body>
-
-  <!-- Navigation Bar -->
-  <nav class="navbar navbar-expand-lg">
-    <div class="container">
-      <a class="navbar-brand" href="#">MIVI</a>
-      <button class="navbar-toggler bg-light" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-        <span class="navbar-toggler-icon bg-light"></span>
-      </button>
-      <div class="collapse navbar-collapse justify-content-between" id="navbarNav">
-        <ul class="navbar-nav gap-5">
-          <li class="nav-item"><a class="nav-link" href="#">Earbuds</a></li>
-          <li class="nav-item"><a class="nav-link" href="#">Soundbars</a></li>
-          <li class="nav-item"><a class="nav-link" href="#">Earphones</a></li>
-          <li class="nav-item"><a class="nav-link" href="#">Speakers</a></li>
-          <li class="nav-item"><a class="nav-link" href="#">Support</a></li>
-          <li class="nav-item"><a class="nav-link" href="#"><i class="fa fa-search"></i></a></li>
-          <li class="nav-item"><a class="nav-link" href="#"><i class="fa-solid fa-bag-shopping"></i></a></li>
-          <li class="nav-item"><a class="nav-link" href="#"><i class="fa-solid fa-user"></i></a></li>
-        </ul>
+    <!-- Main Page Section -->
+    <div class="header-section">
+      <div class="header-title">
+        <img src="./images/main.webp" height="700px" width="100%" alt="" />
       </div>
     </div>
-  </nav>
 
-  <!-- Header Section -->
-  <div class="header-section">
-    <div class="header-title">
-        <img src="./images/main.webp"width="100%"  alt="">
+    <!--Upgarde-->
+    <div class="container">
+      <h4 class="mt-5 text-center">
+        Upgrade to the Next level of clarity with
+      </h4>
+      <img
+        class="d-block mx-auto"
+        src="./images/pods.webp"
+        height="70"
+        alt=""
+      />
+      <p class="text-center fs-4 mt-4">
+        <span><i class="me-3 fa-solid fa-book-open"></i></span>Slide to explore
+      </p>
     </div>
-  </div>
 
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-</body>
+    <!--product-->
+    <div class="container py-5">
+      <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4">
+        <!-- Immersio -->
+        <div class="col">
+          <div class="product-card">
+            <img src="./images/p1.webp" alt="Immersio" />
+            <div class="product-title text-black">Immersio</div>
+            <img src="./images/d1.avif" alt="" />
+            <div class="tagline fw-semibold text-white fs-5">
+              Hear Clear With<br />Cinema, in your Ears
+            </div>
+          </div>
+        </div>
+
+        <!-- Halo -->
+        <div class="col">
+          <div class="product-card">
+            <img src="./images/p2.webp" alt="Halo" />
+            <div class="product-title text-black">Halo</div>
+            <img src="./images/d2.avif" alt="" />
+            <div class="fw-semibold text-white fs-5 tagline">
+              Hear Clear With<br />Shor, No More!
+            </div>
+          </div>
+        </div>
+
+        <!-- Opera ANC -->
+        <div class="col">
+          <div class="product-card">
+            <img src="./images/p3.webp" alt="Opera ANC" />
+            <div class="product-title text-black">Opera ANC</div>
+            <img src="./images/d3.avif" alt="" />
+            <div class="fw-semibold text-white fs-5 tagline">
+              Hear Clear as<br />HD Sound Just Got Ultra HD
+            </div>
+          </div>
+        </div>
+
+        <!-- Dueto -->
+        <div class="col">
+          <div class="product-card">
+            <img src="./images/p4.webp" alt="Dueto" />
+            <div class="product-title text-black">Dueto</div>
+            <img src="./images/d4.avif" alt="" />
+            <div class="fw-semibold text-white fs-5 tagline">
+              Hear Clear with<br />Double Drivers. Double Details.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--gif-->
+    <div class="conatiner mt-5">
+      <h1 class="text-center color fw-bold mb-5 fs-1">Hear Clear with</h1>
+      <img class="d-block mx-auto" src="./images/3d.avif" height="70" alt="" />
+      <img
+        class="d-block mx-auto mt-3"
+        src="./images/gif.webp"
+        height="400"
+        alt=""
+      />
+    </div>
+
+    <!---->
+
+    <div class="custom-box">
+      <h5 class="fw-bold">
+        Step into a new sound dimension with 3D Soundstage and hear each
+        instrument clearly.
+      </h5>
+      <p class="mt-3 mb-0">
+        3D soundstage is Mivi’s signature sound profile that has been tuned in
+        association with sound experts.
+      </p>
+    </div>
+    <button class="d-block mx-auto btn">Explore More</button>
+
+    <!--perfect-->
+    <div class="container">
+      <h2 class="text-center text-white mt-5">
+        The Perfect Balance of Power and Clarity
+      </h2>
+      <h2 class="color text-center mt-3">Dobly Audio For Sounbars</h2>
+      <p class="text-center fs-4 mt-4">
+        <span><i class="me-3 fa-solid fa-book-open"></i></span>Slide to explore
+      </p>
+    </div>
+
+    <!--products1--->
+    <div class="container py-5">
+      <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4">
+        <div class="col">
+          <div class="product-card">
+            <img src="./images/p5.webp" alt="Immersio" />
+            <div class="product-title text-black">Fort H880</div>
+            <img src="./images/q1.svg" alt="" />
+            <div class="tagline fw-semibold text-white fs-5">
+              Hear Clear With<br />Omni-directional Surround Sound
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="product-card">
+            <img src="./images/p6.webp" alt="Halo" />
+            <div class="product-title text-black">Fort H750</div>
+            <img src="./images/q2.svg" alt="" />
+            <div class="fw-semibold text-white fs-5 tagline">
+              Hear Clear With<br />doubly Cinematic Home Experience
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="product-card">
+            <img src="./images/p5.webp" alt="Opera ANC" />
+            <div class="product-title text-black">Fort Q700 D</div>
+            <img src="./images/q3.svg" alt="" />
+            <div class="fw-semibold text-white fs-5 tagline">
+              Hear Clear with<br />Power and Quality
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="product-card">
+            <img src="./images/p8.webp" alt="Dueto" />
+            <div class="product-title text-black">Fort S660</div>
+            <img src="./images/q4.svg" alt="" />
+            <div class="fw-semibold text-white fs-5 tagline">
+              Hear Clear with<br />Power and Quality
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--shop-->
+    <div class="conatiner ">
+      <h2 class="text-center "><i class="mt-5 fa-solid fa-bag-shopping fs-1"></i></h2>
+      <h2 class="text-secondary fs-2 fw-semibold text-center mt-3">Shop By Categories</h2>   
+    </div>
+
+    <!---->
+    <div class="container py-5">
+      
+      <div class="row g-4 justify-content-center">
+        
+        <!-- Card 1 -->
+        <div class="col-md-4 col-sm-6 col-10">
+          <div class="card category-card">
+            <img src="./images/shop1.webp" class="category-img" alt="New Launches" />
+            <div class="category-title">New Launches</div>
+          </div>
+        </div>
+        
+        <!-- Card 2 -->
+        <div class="col-md-4 col-sm-6 col-10">
+          <div class="card category-card">
+            <img src="./images/shop2.webp" class="category-img" alt="TWS Earbuds" />
+            <div class="category-title">TWS Earbuds</div>
+          </div>
+        </div>
+  
+        <!-- Card 3 -->
+        <div class="col-md-4 col-sm-6 col-10">
+          <div class="card category-card">
+            <img src="./images/shop3.webp" class="category-img" alt="Earphones" />
+            <div class="category-title">Earphones</div>
+          </div>
+        </div>
+  
+        <!-- Card 4 -->
+        <div class="col-md-4 col-sm-6 col-10">
+          <div class="card category-card">
+            <img src="./images/shop4.webp" class="category-img" alt="Soundbars and Home Theatres" />
+            <div class="category-title">Soundbars and Home Theatres</div>
+          </div>
+        </div>
+  
+        <!-- Card 5 -->
+        <div class="col-md-4 col-sm-6 col-10">
+          <div class="card category-card">
+            <img src="./images/shop5.webp" class="category-img" alt="BT Speakers" />
+            <div class="category-title">BT Speakers</div>
+          </div>
+        </div>
+  
+      </div>
+    </div>
+
+    <!--like-->
+    <div class="conatiner mt-5">
+      <h2 class="text-center"><img src="./images/like.webp" alt=""></h2>
+      <h2 class="text-center mt-3">Our Customers Love Us</h2>
+    </div>
+
+    <!--o-->
+    <div class="container py-5">
+      <h2 class="text-center mb-5 fw-bold" style="color: #5c4033;">Our Customers Love Us</h2>
+      <div class="row g-4 justify-content-center">
+  
+        <!-- Testimonial 1 -->
+        <div class="col-md-4 col-sm-6 col-10">
+          <div class="testimonial-card text-center">
+            <div class="testimonial-quote">"</div>
+            <div class="testimonial-text">
+              Fort H160 is my first soundbar, so wanted to go for less pricy one. The Sound is loud with 160 watts, yet very clear.A premium look to my living room.also has multiple EQ modes. Surprised at the value thi for the price.
+            </div>
+            <div class="testimonial-author">Navdeep</div>
+          </div>
+        </div>
+  
+        <!-- Testimonial 2 -->
+        <div class="col-md-4 col-sm-6 col-10">
+          <div class="testimonial-card text-center">
+            <div class="testimonial-quote">"</div>
+            <div class="testimonial-text">
+              I was skeptical about buying Double Driver buds, but could feel a clear difference with SuperPods Dueto. It has a balanced bass and treble, making music sound more detailed than ever! They're my go-to buds.
+            </div>
+            <div class="testimonial-author">Aravindo</div>
+          </div>
+        </div>
+  
+        <!-- Testimonial 3 -->
+        <div class="col-md-4 col-sm-6 col-10">
+          <div class="testimonial-card text-center">
+            <div class="testimonial-quote">"</div>
+            <div class="testimonial-text">
+              I've been a Mivi user since a long time. DuoPods i7 has been my favourite, until I tried their latest SuperPods earbuds. They are a class-apart in advanced tech and cater to all my audio needs. Impressed as usual!
+            </div>
+            <div class="testimonial-author">Ananya</div>
+          </div>
+        </div>
+  
+      </div>
+    </div>
+
+    <!--contact-->
+    <div class="conatiner">
+      <h2 class="text-center mt-3">Never Miss A Beat</h2>
+      <p class="text-center mt-3 fs-4">Subscribe to stay updated with new product launches and exciting offers.
+        <br/>
+        We promise not to spam your inbox!</p>
+
+        
+        
+        <section class="subscribe-section">
+          <div class="subscribe-input">
+            <input type="email" class="form-control" placeholder="Enter your email address" />
+            <button type="button" class="btn">Subscribe</button>
+          </div>
+        </section>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
 </html>
