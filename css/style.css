@@ -5,6 +5,8 @@ body {
     font-family: 'Segoe UI', sans-serif;
   }
 
+  
+
   .navbar {
     background-color: #000 !important;
   }
@@ -39,13 +41,13 @@ body {
   .product-card {
     background-color: #fff;
     color: #000;
-    border: 2px solid #a4835b; /* Light brown/tan border */
+    border: 2px solid #a4835b; 
     border-radius: 20px;
     padding: 20px;
     text-align: center;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
     height: 100%;
-    background: linear-gradient(to bottom, #1e0c00, #5f574d); /* Background similar to the screenshot */
+    background: linear-gradient(to bottom, #1e0c00, #5f574d); 
     color: white;
   }
 
@@ -196,3 +198,14 @@ body {
   .subscribe-input button:hover {
     background-color: #00e600;
   }
+  /* -------- Footer ---------- */
+ul li a{
+  text-decoration: none;
+}
+
+ul li a:hover{
+  text-decoration: underline;
+}
+.back{
+  background: linear-gradient(to bottom, #1e0c00, #5f574d);
+}
