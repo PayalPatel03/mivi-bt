@@ -1,0 +1,132 @@
+body{
+    background: #eacfbd !important; 
+}
+.navbar {
+    background-color: #000 !important;
+  }
+  .navbar-nav{
+      gap: 60px !important; 
+  }
+  .navbar-nav .nav-link {
+    
+    margin-right: 20px;
+    font-weight: 500;
+  }
+
+  .navbar-brand {
+    color: #00ff00 !important;
+    font-weight: bold;
+    font-size: 1.5rem;
+  }
+
+  .nav-link {
+    font-weight: 500;
+    transition: color 0.3s ease;
+  }
+
+  .nav-link:hover {
+    color: #00ff00 !important;
+  }
+
+  .navbar-toggler {
+    outline: none;
+  }
+
+  /*product*/
+  .product-title {
+    font-size: 2rem;
+    font-weight: 600;
+  }
+  .price {
+    font-size: 1.8rem;
+    color: black;
+  }
+  .original-price {
+    text-decoration: line-through;
+    color: gray;
+    font-size: 1.2rem;
+  }
+  .color-circle {
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    margin-right: 10px;
+    border: 2px solid black;
+    cursor: pointer;
+  }
+  .color-selected {
+    outline: 3px solid #00ff41;
+  }
+  .btn-mivi {
+    background-color: #00ff41 !important;
+    color: black !important;
+    font-weight: bold !important;
+  }
+  .btn-mivi:hover {
+    background-color: #00e636 !important
+    ;
+  }
+  .hero-section {
+    position: relative;
+    background: url('/images/buds.webp') no-repeat center center/cover;
+    height: 100vh;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+  }
+
+  .heroo-text {
+    max-width: 500px;
+    background: #e8d5c9;
+    color: #333;
+    padding: 2rem;
+    border-radius: 10px;
+    margin-right: 55%;
+    text-align: left;
+  }
+  .hero-text {
+    max-width: 500px;
+    background: #edeceb;
+    color: #333;
+    padding: 2rem;
+    border-radius: 10px;
+    margin-right: 5%;
+    text-align: left;
+  }
+  .hero-text h1 {
+    font-weight: bold;
+  }
+
+  @media (max-width: 768px) {
+    .hero-section {
+      justify-content: center;
+      padding: 2rem;
+    }
+
+    .hero-text {
+      margin: 0;
+      width: 100%;
+    }
+  }
+
+  .heroo-section {
+    position: relative;
+    background: url('/images/mivibuds.webp') no-repeat center center/cover;
+    height: 100vh;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+  }
+
+  @media (max-width: 768px) {
+    .heroo-section {
+      justify-content: center;
+      padding: 2rem;
+    }
+
+    
+  }
+
